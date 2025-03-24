@@ -1,2 +1,2 @@
 # zygisregeo.github.io
-Mano internetinis viešas turinys (daug daug daug xlamo (ne spaudai))uostau kapšį masyvų
+Mano internetinis viešas turinys (daug daug daug xlamo (ne spaudai))

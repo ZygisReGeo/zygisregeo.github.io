@@ -26,7 +26,7 @@
 
     /* Konteinerio stiliai */
     .container {
-      background-color: rgba(0, 0, 0, 0); /* Permatomas fonas */
+      background-color: rgba(0, 0, 0, 0.2); /* Permatomas fonas */
       padding: 40px 60px; /* Vidiniai tarpai */
       max-width: 960px; /* Maksimalus plotis */
       width: 90%; /* Prisitaiko prie ekrano pločio */
@@ -72,7 +72,7 @@
 
     /* Kiekvienos informacinės kortelės stilius */
     .info-card {
-      background-color: rgba(30, 30, 30, 0); /* Tamsesnis fonas */
+      background-color: rgba(30, 30, 30, 0.3); /* Tamsesnis fonas */
       border-radius: 12px;
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
       overflow: hidden;

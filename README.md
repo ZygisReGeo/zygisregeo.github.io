@@ -329,7 +329,7 @@
 
     <div class="links-list">
       <div class="map-card">
-        <img src="https://ibb.co/ch7b0hNn" class="map-thumbnail">
+        <img src="https://i.ibb.co/VYPHRYv4/img1.png" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/1_praktinis/map_1.html" target="_blank"><i class="fas fa-map"></i> 1 Žemėlapis</a>
         </div>

@@ -329,7 +329,7 @@
 
     <div class="links-list">
       <div class="map-card">
-        <img src="https://private-user-images.githubusercontent.com/204777776/449650170-9b3bea7d-3474-4f1d-8885-0907ee9afbe3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg3MzQwODQsIm5iZiI6MTc0ODczMzc4NCwicGF0aCI6Ii8yMDQ3Nzc3NzYvNDQ5NjUwMTcwLTliM2JlYTdkLTM0NzQtNGYxZC04ODg1LTA5MDdlZTlhZmJlMy5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUzMVQyMzIzMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NWZkMWUwNzljNGM5YjVjNGQ2ZTAwNzIzMWY3MDExMTk0NzA3NzE0YjM3YjQyN2Y3ZjExNDZkYTU5NmZjM2NmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Dmn19kmlDJn7ZrE6v5ZdU5K4eNOKMwB1kENwdiSJxlg" class="map-thumbnail">
+        <img src="https://github.com/user-attachments/assets/9e84917b-e4e8-483f-aaaa-f3b2bc70f109" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/1_praktinis/map_1.html" target="_blank"><i class="fas fa-map"></i> 1 Žemėlapis</a>
         </div>

@@ -315,14 +315,12 @@
 
     <div class="info-sections">
       <div class="info-card">
-        <img src="https://placehold.co/200x150/8B0000/FFFFFF?text=Info+Paveikslėlis+1" alt="Informacinis paveikslėlis 1" class="info-card-img">
         <div class="info-card-content">
           <p>Ši svetainė yra naudojama tik atsiskaityti studijų metu atliktiem darbam ir bus apleista, kai viskas bus atsiskaityta.</p>
         </div>
       </div>
 
       <div class="info-card">
-        <img src="https://placehold.co/200x150/4B0082/FFFFFF?text=Info+Paveikslėlis+2" alt="Informacinis paveikslėlis 2" class="info-card-img">
         <div class="info-card-content">
           <p>Svarbu paminėti, kad svetainės įkūrėjas yra kaltinamas didelio masto terorizmo išpuolio planavimu. Ši informacija skelbiama atsižvelgiant į viešąjį interesą.</p>
         </div>

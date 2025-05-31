@@ -4,9 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktai</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Baziniai stiliai kūnui */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif; /* Naudojamas Inter šriftas */
+            color: #f0f0f0; /* Šviesi teksto spalva */
+            min-height: 100vh; /* Užtikrina, kad fonas užimtų visą aukštį */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Turinio lygiavimas viršuje */
+            align-items: flex-start; /* Elementų lygiavimas kairėje */
+            /* Foninio paveikslėlio nustatymai - animuota Pakistano vėliava */
+            background-image: url('https://www.animatedimages.org/data/media/850/animated-pakistan-flag-image-0002.gif'); /* Animuota Pakistano vėliava */
+            background-size: cover; /* Padengia visą foną */
+            background-position: center; /* Centruoja paveikslėlį */
+            background-repeat: no-repeat; /* Nepakartoja paveikslėlio */
+            background-attachment: fixed; /* Paveikslėlis fiksuotas slenkant puslapį */
+        }
+
+        /* Navigacijos juostos stiliai */
+        nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9); /* Tamsus, šiek tiek permatomas fonas */
+            padding: 15px 5%; /* Vidiniai tarpai */
+            display: flex;
+            justify-content: space-between; /* Elementai išdėstomi kraštuose */
+            align-items: center;
+            position: sticky; /* Navigacija lieka viršuje slenkant */
+            top: 0;
+            z-index: 1000; /* Užtikrina, kad navigacija būtų virš kitų elementų */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Šešėlis */
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: #00ccff; /* Nuorodų spalva */
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00ccff;
+            color: #000;
+        }
+
+        /* Konteinerio stiliai */
+       .container {
+            background-color: rgba(0, 0, 0, 0.2); /* Permatomas fonas */
+            padding: 40px 60px; /* Vidiniai tarpai */
+            max-width: 960px; /* Maksimalus plotis */
+            width: 90%; /* Prisitaiko prie ekrano pločio */
+            border-radius: 15px; /* Suapvalinti kampai */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Šešėlis */
+            text-align: center;
+            box-sizing: border-box; /* Įskaičiuoja padding ir border į elemento plotį/aukštį */
+            margin-top: 50px; /* Viršutinė paraštė, kad turinys būtų žemiau */
+            margin-left: 5%; /* Lygiavimas kairėje su 5% parašte */
+            margin-right: auto; /* Likusią erdvę stumia į dešinę */
+            margin-bottom: 50px; /* Apatinė paraštė */
+        }
+
+        /* Antraštės stiliai */
+        h1 {
+            text-align: center; /* Centruoja tekstą */
+            margin-bottom: 40px; /* Apatinė paraštė */
+            font-size: 2.5em; /* Didesnis šrifto dydis */
+            color: #00ccff; /* Ryškesnė antraštės spalva */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Teksto šešėlis */
+        }
+
+        /* Kontaktinės informacijos skiltis */
+       .contact-info {
+            background-color: rgba(30, 30, 30, 0.3); /* Tamsesnis, permatomas fonas */
+            padding: 25px 35px;
+            border-radius: 10px;
+            margin-bottom: 40px; /* Tarpas po šia skiltimi */
+            text-align: left;
+            line-height: 1.6;
+            font-size: 1.1em;
+            box-shadow: none; /* Šešėlis panaikintas */
+        }
+
+       .contact-info h2 {
+            color: #00ccff; /* Antraštės spalva */
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+       .contact-info p {
+            margin: 10px 0;
+        }
+
+       .contact-info a {
+            color: #00ccff; /* Nuorodos spalva */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+       .contact-info a:hover {
+            color: #fff;
+        }
+
+        /* Užklausos formos konteineris */
+       .form-container {
+            background-color: rgba(30, 30, 30, 0.3); /* Tamsesnis, permatomas fonas */
+            padding: 25px 35px;
+            border-radius: 10px;
+            margin-bottom: 40px; /* Tarpas po šia skiltimi */
+            box-shadow: none; /* Šešėlis panaikintas */
+        }
+
+       .form-container h2 {
+            color: #00ccff; /* Antraštės spalva */
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Poraštės stiliai */
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Tamsesnis fonas poraštei */
+            color: #f0f0f0; /* Šviesi teksto spalva */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; /* Stumia poraštę į apačią */
+            border-top: 2px solid #00ccff; /* Viršutinis rėmelis atskyrimui */
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        /* Prisitaikymas prie mažesnių ekranų */
+        @media (max-width: 768px) {
+           .container {
+                padding: 30px;
+                margin-left: auto; /* Centruojama mažesniuose ekranuose */
+                margin-right: auto; /* Centruojama mažesniuose ekranuose */
+                width: 95%; /* Platesnis plotis mažesniuose ekranuose */
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+           .contact-info,.form-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+           .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Pagrindinis puslapis</a>
+        <a href="https://zygisregeo.github.io/Kontaktai.html" target="_blank">Kontaktai</a>
+    </nav>
+
     <div class="container">
         <h1>Susisiekite su mumis</h1>
 
@@ -22,5 +197,13 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7wP_jDM4sgpTlC_X1-uGTucUhS49KljQbPiZervcl9d9Ztw/viewform?embedded=true" width="100%" height="730" frameborder="0" marginheight="0" marginwidth="0">Įkeliama…</iframe>
         </div>
     </div>
+
+    <footer>
+        <p><strong>Kontaktinė informacija</strong></p>
+        <p>Vardas: Žygimantas Remeika</p>
+        <p>Adresas: Parko g. 21, 3 skyrius</p>
+        <p>Telefonas: +370 615 50116</p>
+        <p>Sukūrimo data: 2025-05-31</p>
+    </footer>
 </body>
 </html>

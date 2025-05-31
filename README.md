@@ -336,28 +336,28 @@
       </div>
 
       <div class="map-card">
-        <img src="https://placehold.co/250x150/50E3C2/FFFFFF?text=2+Žemėlapis" alt="2 Žemėlapis" class="map-thumbnail">
+        <img src="https://i.ibb.co/dst0rrCN/img2.png" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/1_praktinis/map_2.html" target="_blank"><i class="fas fa-map"></i> 2 Žemėlapis</a>
         </div>
       </div>
 
       <div class="map-card">
-        <img src="https://placehold.co/250x150/F5A623/FFFFFF?text=3+Žemėlapis" alt="3 Žemėlapis" class="map-thumbnail">
+        <img src="https://i.ibb.co/zW6NCM8k/img3.png" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/1_praktinis/map_3.html" target="_blank"><i class="fas fa-map"></i> 3 Žemėlapis</a>
         </div>
       </div>
 
       <div class="map-card">
-        <img src="https://placehold.co/250x150/BD10E0/FFFFFF?text=Geoportal" alt="Geoportal žemėlapis" class="map-thumbnail">
+        <img src="https://i.ibb.co/DPfbPNLK/img4.png" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/2_praktinis/zhemelapyzas.html" target="_blank"><i class="fas fa-map"></i> Geoportal žemėlapis</a>
         </div>
       </div>
 
       <div class="map-card">
-        <img src="https://placehold.co/250x150/7ED321/FFFFFF?text=ArcGIS" alt="ArcGIS aplikacija" class="map-thumbnail">
+        <img src="https://i.ibb.co/jk8M7DgX/img5.png" class="map-thumbnail">
         <div class="map-card-content">
           <a href="https://zygisregeo.github.io/3_praktinis/appsas.html" target="_blank"><i class="fas fa-map"></i> ArcGIS aplikacija</a>
         </div>

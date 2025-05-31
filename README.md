@@ -16,14 +16,13 @@
       flex-direction: column;
       justify-content: flex-start; /* Align content to the top */
       align-items: center;
-      /* Background image settings */
-      /* Change 'path/to/your/background_image.jpg' to your background image path */
-      background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Jūsų+fono+paveikslėlis+čia'); /* Change this URL to your background image path */
+      /* Background image settings - now an animated Pakistan flag */
+      background-image: url('https://www.animatedimages.org/data/media/850/animated-pakistan-flag-image-0002.gif'); /* Animated Pakistan flag */
       background-size: cover; /* Cover the entire background */
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-attachment: fixed; /* Image fixed when scrolling the page */
-      background-color: #222; /* Fallback background color if image fails to load */
+      /* Removed background-color fallback as GIF should cover the background */
     }
 
     /* Container styles */

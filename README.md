@@ -24,6 +24,35 @@
       background-attachment: fixed; /* Paveikslėlis fiksuotas slenkant puslapį */
     }
 
+    /* Navigacijos juostos stiliai */
+    nav {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9); /* Tamsus, šiek tiek permatomas fonas */
+      padding: 15px 5%; /* Vidiniai tarpai */
+      display: flex;
+      justify-content: space-between; /* Elementai išdėstomi kraštuose */
+      align-items: center;
+      position: sticky; /* Navigacija lieka viršuje slenkant */
+      top: 0;
+      z-index: 1000; /* Užtikrina, kad navigacija būtų virš kitų elementų */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Šešėlis */
+      box-sizing: border-box;
+    }
+
+    nav a {
+      color: #00ccff; /* Nuorodų spalva */
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00ccff;
+      color: #000;
+    }
+
     /* Konteinerio stiliai */
     .container {
       background-color: rgba(0, 0, 0, 0.2); /* Permatomas fonas */
@@ -74,7 +103,7 @@
     .info-card {
       background-color: rgba(30, 30, 30, 0.3); /* Tamsesnis fonas */
       border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0); /* Šešėlis panaikintas */
       overflow: hidden;
       display: flex;
       flex-direction: row; /* Paveikslėlis ir tekstas šalia */
@@ -272,8 +301,13 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#top">Pagrindinis puslapis</a>
+    <a href="https://zygisregeo.github.io/Kontaktai.html" target="_blank">Kontaktai</a>
+  </nav>
+
   <div class="container">
-    <h1>Mano internetinis viešas turinys</h1>
+    <h1 id="top">Mano internetinis viešas turinys</h1>
 
     <div class="section-intro">
       <p>Sveiki atvykę į mano puslapį, skirtą dalintis įvairiais žemėlapių projektais ir geografinės informacijos sistemų (GIS) aplikacijomis. Čia rasite mano praktinius darbus, atliktus studijų metu, ir kitus įdomius projektus, susijusius su kartografija ir erdvinių duomenų analize.</p>

@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mano internetinis viešas turinys</title>
+  <title>Prašome išsirinkti žemėlapį</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     /* Baziniai stiliai kūnui */
@@ -26,7 +26,7 @@
 
     /* Konteinerio stiliai */
     .container {
-      background-color: rgba(0, 0, 0, 0.7); /* Pusiau permatomas juodas fonas */
+      background-color: rgba(0, 0, 0, 0); /* Permatomas fonas */
       padding: 40px 60px; /* Vidiniai tarpai */
       max-width: 960px; /* Maksimalus plotis */
       width: 90%; /* Prisitaiko prie ekrano pločio */
@@ -49,6 +49,60 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Teksto šešėlis */
     }
 
+    /* Svetainės pristatymo skiltis */
+    .section-intro {
+      background-color: rgba(30, 30, 30, 0.8); /* Tamsesnis fonas */
+      padding: 25px 35px;
+      border-radius: 10px;
+      margin-bottom: 40px; /* Tarpas po šia skiltimi */
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1.1em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Informacinių skilčių konteineris */
+    .info-sections {
+      display: flex;
+      flex-direction: column; /* Kortelės viena po kitos vertikaliai */
+      gap: 30px; /* Tarpas tarp informacinių kortelių */
+      margin-top: 40px; /* Tarpas virš šios skilties */
+      margin-bottom: 40px; /* Tarpas po šia skiltimi */
+    }
+
+    /* Kiekvienos informacinės kortelės stilius */
+    .info-card {
+      background-color: rgba(30, 30, 30, 0); /* Tamsesnis fonas */
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+      overflow: hidden;
+      display: flex;
+      flex-direction: row; /* Paveikslėlis ir tekstas šalia */
+      align-items: flex-start; /* Lygiavimas viršuje */
+      text-align: left;
+      color: #f0f0f0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 204, 255, 0.3);
+    }
+
+    .info-card-img {
+      width: 200px; /* Fiksuotas paveikslėlio plotis */
+      height: 150px; /* Fiksuotas paveikslėlio aukštis */
+      object-fit: cover;
+      flex-shrink: 0;
+      border-right: 2px solid #00ccff;
+    }
+
+    .info-card-content {
+      padding: 20px;
+      line-height: 1.5;
+      font-size: 1em;
+    }
+
     /* Nuorodų konteineris, išdėstytas kaip vertikalus kortelių sąrašas */
     .links-list {
       display: flex;
@@ -59,7 +113,7 @@
 
     /* Kiekvienos žemėlapio kortelės stilius */
     .map-card {
-      background-color: rgba(50, 50, 50, 0.9); /* Šiek tiek permatomas fonas kortelėms */
+      background-color: transparent; /* Fonas panaikintas / permatomas */
       border-radius: 12px; /* Suapvalinti kampai */
       border: 10px solid #006400; /* 10px storio tamsiai žalias rėmelis */
       box-shadow: none; /* Šešėlis panaikintas */
@@ -139,7 +193,8 @@
     @media (max-width: 768px) {
       .container {
         padding: 30px;
-        margin: 30px auto; /* Centruojama mažesniuose ekranuose geresniam matomumui */
+        margin-left: auto; /* Centruojama mažesniuose ekranuose */
+        margin-right: auto; /* Centruojama mažesniuose ekranuose */
         width: 95%; /* Platesnis plotis mažesniuose ekranuose */
       }
 
@@ -147,8 +202,29 @@
         font-size: 2em;
       }
 
-      .map-card {
+      .section-intro, .info-card {
+        padding: 20px;
+      }
+
+      .info-card {
         flex-direction: column; /* Paveikslėlis ir turinys vienas po kito vertikaliai mažuose ekranuose */
+        align-items: center;
+      }
+
+      .info-card-img {
+        width: 100%;
+        height: 180px;
+        border-right: none;
+        border-bottom: 2px solid #00ccff;
+      }
+
+      .info-card-content {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .map-card {
+        flex-direction: column; /* Paveikslėlis ir turinys vienas po kitos vertikaliai mažuose ekranuose */
         align-items: center;
       }
 
@@ -181,6 +257,10 @@
         margin-bottom: 20px;
       }
 
+      .info-card-img {
+        height: 150px;
+      }
+
       .map-thumbnail {
         height: 150px;
       }
@@ -194,6 +274,27 @@
 <body>
   <div class="container">
     <h1>Mano internetinis viešas turinys</h1>
+
+    <div class="section-intro">
+      <p>Sveiki atvykę į mano puslapį, skirtą dalintis įvairiais žemėlapių projektais ir geografinės informacijos sistemų (GIS) aplikacijomis. Čia rasite mano praktinius darbus, atliktus studijų metu, ir kitus įdomius projektus, susijusius su kartografija ir erdvinių duomenų analize.</p>
+    </div>
+
+    <div class="info-sections">
+      <div class="info-card">
+        <img src="https://placehold.co/200x150/8B0000/FFFFFF?text=Info+Paveikslėlis+1" alt="Informacinis paveikslėlis 1" class="info-card-img">
+        <div class="info-card-content">
+          <p>Ši svetainė yra naudojama tik atsiskaityti studijų metu atliktiem darbam ir bus apleista, kai viskas bus atsiskaityta.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <img src="https://placehold.co/200x150/4B0082/FFFFFF?text=Info+Paveikslėlis+2" alt="Informacinis paveikslėlis 2" class="info-card-img">
+        <div class="info-card-content">
+          <p>Svarbu paminėti, kad svetainės įkūrėjas yra kaltinamas didelio masto terorizmo išpuolio planavimu. Ši informacija skelbiama atsižvelgiant į viešąjį interesą.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="links-list">
       <div class="map-card">
         <img src="https://placehold.co/250x150/4A90E2/FFFFFF?text=1+Žemėlapis" alt="1 Žemėlapis" class="map-thumbnail">

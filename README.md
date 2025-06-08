@@ -17,7 +17,7 @@
       justify-content: flex-start; /* Turinio lygiavimas viršuje */
       align-items: flex-start; /* Elementų lygiavimas kairėje */
       /* Foninio paveikslėlio nustatymai - animuota Pakistano vėliava */
-      background-image: url('https://www.animatedimages.org/data/media/850/animated-pakistan-flag-image-0002.gif'); /* Animuota Pakistano vėliava */
+      background-image: url('https://www.animatedimages.org/data/media/1667/animated-world-globe-image-0012.gif'); /* Animuotas Žemės bei mėnulio vaizdas */
       background-size: cover; /* Padengia visą foną */
       background-position: center; /* Centruoja paveikslėlį */
       background-repeat: no-repeat; /* Nepakartoja paveikslėlio */
@@ -322,7 +322,7 @@
 
       <div class="info-card">
         <div class="info-card-content">
-          <p>Svarbu paminėti, kad svetainės įkūrėjas yra kaltinamas didelio masto terorizmo išpuolio planavimu. Ši informacija skelbiama atsižvelgiant į viešąjį interesą.</p>
+          <p>Svarbios papildomos informacijos klausti trumpąją SMS žinute</p>
         </div>
       </div>
     </div>
@@ -367,7 +367,7 @@
   <footer>
     <p><strong>Kontaktinė informacija</strong></p>
     <p>Vardas: Žygimantas Remeika</p>
-    <p>Adresas: Parko g. 21, 3 skyrius</p>
+    <p>Adresas: T. Kosciuškos g. 1</p>
     <p>Telefonas: +370 615 50116</p>
     <p>Sukūrimo data: 2025-05-31</p>
   </footer>
